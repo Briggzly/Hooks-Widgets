@@ -3,6 +3,7 @@ import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import { useState } from "react/cjs/react.development";
+import Translate from "./components/Translate";
 
 const options = [
   {
@@ -50,6 +51,11 @@ export default () => {
           options={options}
         />
       ) : null}
+
+        <div>
+          <Translate />
+        </div>
+
     </div>
   );
 };
